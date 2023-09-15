@@ -62,12 +62,12 @@ public class Main {
         Важно помнить: подсчет среднего значения может иметь остаток, то есть быть не целым, а дробным числом.*/
         int[] arr = generateRandomArray();
         int sum = 0;
-        for (int i = 0; i < arr.length; i++) {
-            sum = sum + arr[i];
+        int month = 30;
+        for (int j :arr){
+            sum +=j;
         }
-        int intager = sum / 2;
-        int fractional = sum % 2;
-        System.out.println("Средняя сумма трат за месяц составила " + sum + " рублей " + fractional + " копеек");
+        float middle = (float) sum / month;
+        System.out.println("Средняя сумма трат за месяц составила " + middle + " рублей ");
     }
 
     public static void task4() {
